@@ -1,6 +1,6 @@
 # Info
 
-The scripts were written for my personal use, feel free to use them as well. Be advised, my code might not the best, but it works.
+The scripts were written for my personal use, feel free to use them as well. Be advised, my code might not the best, but it works for me.
 
 # Scripts
 

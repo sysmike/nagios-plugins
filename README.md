@@ -1,2 +1,8 @@
-# nagios-plugins
-Plugins written for Icinga2 and other nagios-compatible software
+# Info
+
+The scripts were written for my personal use, feel free to use them as well. Be advised, my code might not the best, but it works.
+
+# Scripts
+
+- cbn-ch6640e.py - Checks things like snr & signal strength on my CBN CH6640E cable modem
+

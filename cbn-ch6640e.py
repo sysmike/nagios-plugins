@@ -6,11 +6,11 @@ a = str(0)
 b = str(0)
 c = str(0)
 
-page_downstream = urllib2.urlopen('http://modem.sysmike.de/xml/DocsisDownstream.xml').read()
+page_downstream = urllib2.urlopen('http://192.168.100.1/xml/DocsisDownstream.xml').read()
 downstream = BeautifulSoup(page_downstream)
 downstream.prettify()
 
-page_upstream = urllib2.urlopen('http://modem.sysmike.de/xml/DocsisUpstream.xml').read()
+page_upstream = urllib2.urlopen('http://192.168.100.1/xml/DocsisUpstream.xml').read()
 upstream = BeautifulSoup(page_upstream)
 upstream.prettify()
 

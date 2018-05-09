@@ -39,7 +39,7 @@ def print_result():
 	gpu = 0
 	for item in hashrate:
 		if int(item) < 20000:
-			problem = True
+		problem = True
 		tmp = "hashrate_gpu" + str(gpu) + "=" + str(item)
 		result.append(tmp)
 		gpu = gpu + 1
@@ -47,7 +47,7 @@ def print_result():
 	gpu = 0
 	for item in temperature_gpu:
 		if int(item) > 70:
-			problem = True
+		problem = True
 		tmp = "temperature_gpu" + str(gpu) + "=" + str(item.lstrip())
 		result.append(tmp)
 		gpu = gpu + 1
@@ -66,14 +66,14 @@ def print_result():
 		print("Something is wrong with this rig |"),
 		print("version=" + str(version) + " uptime=" + str(uptime)),
 		for item in result:
-	    		print item,
+	    	print item,
 		sys.exit(1)
 	else:
 		print("This mining rig is operating in its specified parameters |"),
 		print("version=" + str(version) + " uptime=" + str(uptime)),
 		for item in result:
-	    		print item,
-    	sys.exit(0)
+	    	print item,
+    		sys.exit(0)
 
 get_miner_info()
 print_result()

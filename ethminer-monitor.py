@@ -4,8 +4,13 @@ import sys
 import json
 import subprocess
 from time import sleep
+from argparse import ArgumentParser
 
 result = []
+
+parser = ArgumentParser(add_help=False)
+parser.add_argument('-H', '--hostname', dest='hostname', metavar='ADDRESS', required=True, help="host name or IP address")
+args = parser.parse_args()
 
 def get_miner_info():
 
@@ -18,7 +23,7 @@ def get_miner_info():
 	global fanspeed_gpu
 	global pool
 
-	cmd = '''echo '{"method": "miner_getstathr", "jsonrpc": "2.0", "id": 5 }' | timeout 2 nc 127.0.0.1 8085'''
+	cmd = '''echo '{"method": "miner_getstathr", "jsonrpc": "2.0", "id": 5 }' | timeout 2 nc ''' + str(args.hostname) + ' 8085'
 	s = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
 	rsp = s.communicate()[0]
 	data = json.loads(rsp)

@@ -60,6 +60,8 @@ def print_result():
 	for item in power_usage:
 		if int(item) > 120:
 			problem = True
+		if int(item) < 60:
+			problem = True
 		tmp = "powerusage_gpu" + str(gpu) + "=" + str(item)
 		result.append(tmp)
 		gpu = gpu + 1

@@ -49,4 +49,4 @@ else:
  + ' sourcefiles=' + str(sourcefiles) + ' deletefiles=' + str(deletefiles) + ' changedfiles=' + str(changedfiles)
  + ' deltaentries=' + str(deltaentries) + ' rawdeltasize=' + rawdeltasize[1] + ' totaldestinationsizechange='
  + totaldestinationsizechange[1] + ' errors=' + str(errors))
-    sys.exit(0)#!/usr/bin/env python
+    sys.exit(0)

@@ -7,3 +7,4 @@ The scripts were written for my personal use, feel free to use them as well. Be 
 - cbn-ch6640e.py - Checks things like snr & signal strength on my CBN CH6640E cable modem
 - apcupsd-windows.py - Checks apcupds on windows for battery load/charge/max runtime, line- and batteryvoltage 
 - ethminer-monitor.py - Monitors a ethminer instance on locahost
+- check_duplicity.py - Checks duplicity log output for errors
